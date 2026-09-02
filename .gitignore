@@ -1,3 +1,4 @@
 .env
 shared/backup-workflows/
 shared/_import_staging/
+shared/social-desk/
