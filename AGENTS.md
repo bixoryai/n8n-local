@@ -24,6 +24,8 @@ Image: `n8nio/n8n:2.36.0`. Do not start n8n from social-desk’s `docker-compose
 
 Ollama for Social Desk drafts: `http://host.docker.internal:11434` (`llama3.2:latest`).
 
+Optional: `FIRECRAWL_API_KEY` in `.env` (same key as the Firecrawl MCP). Social Desk Generate then scrapes a Topics source URL via Firecrawl, and falls back to a plain GET if Firecrawl fails or the key is empty. Do not commit `.env`.
+
 ## File access
 
 `N8N_RESTRICT_FILE_ACCESS_TO=/data/shared;/home/node/.n8n-files` is required. n8n 2.x otherwise cannot write Social Desk files under `/data/shared`.
